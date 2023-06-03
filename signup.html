@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <script src="https://unpkg.com/just-validate@latest/dist
+                /just-validate.production.min.js" defer ></script>
+     <script src="validation.js" defer></script>           
+</head>
+<body>
+   
+    <form action="http://localhost/signInUP/SignupProcess.php"
+            method="POST"  id="signup" novalidate >
+           
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" >
+        </div>
+        <div>
+            <label for="email">Email</label> 
+            <input type="text" id="email" name="email"  >
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" >
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password" >
+        </div>
+        <div>
+            <label for="REpass">Repeat Password</label>
+            <input type="password" id="REpass" name="Repeated_password" >
+        </div>
+        <button type="submit">sign up</button>
+
+    </form>
+    
+</body>
+</html>
